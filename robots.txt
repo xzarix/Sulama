@@ -2,5 +2,7 @@ User-agent: *
 Allow: /
 Disallow: /pages/sepet.html
 Disallow: /pages/urun-detay.html
+Disallow: /admin/
+Disallow: /api/
 
 Sitemap: https://www.sulamashop.com/sitemap.xml

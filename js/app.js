@@ -290,14 +290,55 @@ function initCartPage() {
     }
 
     if (checkoutForm) {
-        checkoutForm.addEventListener('submit', (e) => {
+        checkoutForm.addEventListener('submit', async (e) => {
             e.preventDefault();
-            Cart.clear();
-            if (modal) modal.classList.remove('open');
-            showToast('Siparişiniz alınmıştır! Teşekkür ederiz.');
-            setTimeout(() => {
-                Cart.renderCartPage();
-            }, 500);
+            const btn = checkoutForm.querySelector('button[type="submit"]');
+            const origText = btn ? btn.textContent : '';
+            if (btn) { btn.disabled = true; btn.textContent = 'Gönderiliyor...'; }
+
+            const customer = {
+                name: checkoutForm.querySelector('[name="name"]')?.value || '',
+                phone: checkoutForm.querySelector('[name="phone"]')?.value || '',
+                email: checkoutForm.querySelector('[name="email"]')?.value || '',
+                address: checkoutForm.querySelector('[name="address"]')?.value || '',
+                city: checkoutForm.querySelector('[name="city"]')?.value || '',
+                district: checkoutForm.querySelector('[name="district"]')?.value || ''
+            };
+
+            const items = Cart.getItems ? Cart.getItems() : [];
+            const cartData = items.map(item => {
+                const product = typeof getProductById === 'function' ? getProductById(item.id) : null;
+                return {
+                    id: item.id,
+                    name: product ? product.name : 'Urun #' + item.id,
+                    quantity: item.quantity,
+                    price: product ? product.price : 0
+                };
+            });
+
+            try {
+                const resp = await fetch('/api/order', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ customer, cart: cartData })
+                });
+                const data = await resp.json();
+                if (data.success) {
+                    Cart.clear();
+                    if (modal) modal.classList.remove('open');
+                    showToast('Siparişiniz alındı! WhatsApp ile onay bekleniyor.');
+                    if (data.whatsappUrl) {
+                        setTimeout(() => { window.open(data.whatsappUrl, '_blank'); }, 500);
+                    }
+                    setTimeout(() => { Cart.renderCartPage(); }, 1000);
+                } else {
+                    showToast(data.message || 'Bir hata oluştu.');
+                }
+            } catch {
+                showToast('Bağlantı hatası. Lütfen tekrar deneyin.');
+            }
+
+            if (btn) { btn.disabled = false; btn.textContent = origText; }
         });
     }
 }
@@ -307,10 +348,34 @@ function initContactForm() {
     const form = document.getElementById('contactForm');
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        showToast('Mesajınız gönderildi. En kısa sürede dönüş yapacağız.');
-        form.reset();
+        const btn = form.querySelector('button[type="submit"]');
+        const origText = btn ? btn.textContent : '';
+        if (btn) { btn.disabled = true; btn.textContent = 'Gönderiliyor...'; }
+
+        const formData = {
+            name: form.querySelector('[name="name"]')?.value || '',
+            phone: form.querySelector('[name="phone"]')?.value || '',
+            email: form.querySelector('[name="email"]')?.value || '',
+            subject: form.querySelector('[name="subject"]')?.value || '',
+            message: form.querySelector('[name="message"]')?.value || ''
+        };
+
+        try {
+            const resp = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(formData)
+            });
+            const data = await resp.json();
+            showToast(data.message || 'Mesajınız gönderildi.');
+            if (data.success) form.reset();
+        } catch {
+            showToast('Bağlantı hatası. Lütfen tekrar deneyin.');
+        }
+
+        if (btn) { btn.disabled = false; btn.textContent = origText; }
     });
 }
 
@@ -319,9 +384,27 @@ function initNewsletterForm() {
     const form = document.getElementById('newsletterForm');
     if (!form) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        showToast('Bültenimize abone oldunuz!');
-        form.reset();
+        const btn = form.querySelector('button[type="submit"]');
+        const origText = btn ? btn.textContent : '';
+        if (btn) { btn.disabled = true; btn.textContent = '...'; }
+
+        const email = form.querySelector('[name="email"]')?.value || form.querySelector('input[type="email"]')?.value || '';
+
+        try {
+            const resp = await fetch('/api/newsletter', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ email })
+            });
+            const data = await resp.json();
+            showToast(data.message || 'Abone oldunuz!');
+            if (data.success) form.reset();
+        } catch {
+            showToast('Bağlantı hatası. Lütfen tekrar deneyin.');
+        }
+
+        if (btn) { btn.disabled = false; btn.textContent = origText; }
     });
 }
