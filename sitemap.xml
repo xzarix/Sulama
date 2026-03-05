@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Ana Sayfa -->
+    <url><loc>https://www.sulamashop.com/</loc><lastmod>2026-03-05</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
+
+    <!-- Ana Sayfalar -->
+    <url><loc>https://www.sulamashop.com/pages/urunler.html</loc><lastmod>2026-03-05</lastmod><changefreq>daily</changefreq><priority>0.9</priority></url>
+    <url><loc>https://www.sulamashop.com/pages/hakkimizda.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+    <url><loc>https://www.sulamashop.com/pages/iletisim.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+    <!-- Kategori Sayfalari -->
+    <url><loc>https://www.sulamashop.com/kategori/damla-sulama.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://www.sulamashop.com/kategori/yagmurlama-sistemleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://www.sulamashop.com/kategori/pompalar.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://www.sulamashop.com/kategori/filtre-gubre-sistemleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://www.sulamashop.com/kategori/borular-baglantilar.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+    <url><loc>https://www.sulamashop.com/kategori/akilli-sulama.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.9</priority></url>
+
+    <!-- Marka Sayfalari -->
+    <url><loc>https://www.sulamashop.com/marka/firat-boru.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/marka/netafim.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/marka/rainbird.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/marka/irritec.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/marka/pipelife.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/marka/anadolu-boru.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/marka/hunter.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/marka/pedrollo.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+    <!-- Urun Sayfalari -->
+    <url><loc>https://www.sulamashop.com/urun/16mm-yassi-damla-sulama-borusu.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/duz-damlatici-dripper-4lt.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/pe-lateral-boru-20mm.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/damla-sulama-baglanti-seti.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/360-doner-sprinkler-popup.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/sulama-tabancasi-metal.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/hortum-makarasi-1inch.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/4inch-dalgic-pompa-2hp.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/santrifuj-pompa-3hp.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/gunes-enerjili-sulama-pompasi.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/disk-filtre-2inch-120mesh.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/kum-cakil-filtre-otomatik.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/venturi-gubre-enjektoru.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/pe-boru-63mm-pn6.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/pvc-vana-2inch-kuresel.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/pe-fitting-seti-63mm.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/akilli-sulama-kontrol-unitesi.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/toprak-nem-sensoru-kablosuz.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/selenoid-vana-1inch-24v.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+    <url><loc>https://www.sulamashop.com/urun/dijital-su-sayaci-pulse.html</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.8</priority></url>
+
+    <!-- Bolge Sayfalari -->
+    <url><loc>https://www.sulamashop.com/bolge/konya-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/antalya-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/adana-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/izmir-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/ankara-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/bursa-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/mersin-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/sanliurfa-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/mugla-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/gaziantep-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/diyarbakir-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/hatay-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/manisa-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/aydin-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/denizli-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/eskisehir-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/sakarya-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/samsun-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/trabzon-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/isparta-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/burdur-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/afyon-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/aksaray-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/karaman-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/nigde-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/bolge/amasya-sulama-malzemeleri.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+
+    <!-- Blog -->
+    <url><loc>https://www.sulamashop.com/blog/</loc><lastmod>2026-03-05</lastmod><changefreq>weekly</changefreq><priority>0.7</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/damla-sulama-nasil-kurulur.html</loc><lastmod>2026-03-05</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/yagmurlama-vs-damla-sulama.html</loc><lastmod>2026-03-03</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/pe-boru-cesitleri-rehberi.html</loc><lastmod>2026-03-01</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/gunes-enerjili-sulama-avantajlari.html</loc><lastmod>2026-02-28</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/sulama-filtresi-secim-rehberi.html</loc><lastmod>2026-02-25</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/akilli-sulama-sistemi-nedir.html</loc><lastmod>2026-02-22</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/toprak-nemi-olcum-yontemleri.html</loc><lastmod>2026-02-20</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+    <url><loc>https://www.sulamashop.com/blog/koruge-boru-nedir-nerelerde-kullanilir.html</loc><lastmod>2026-02-18</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
+</urlset>

@@ -3,6 +3,8 @@ const PRODUCTS = [
     // Damla Sulama
     {
         id: 1,
+        slug: "16mm-yassi-damla-sulama-borusu",
+        brand: "Netafim",
         name: "16mm Yassı Damla Sulama Borusu (500m)",
         category: "damla",
         categoryName: "Damla Sulama",
@@ -23,6 +25,8 @@ const PRODUCTS = [
     },
     {
         id: 2,
+        slug: "duz-damlatici-dripper-4lt",
+        brand: "Netafim",
         name: "Düz Damlatıcı (Dripper) 4 lt/saat - 100 Adet",
         category: "damla",
         categoryName: "Damla Sulama",
@@ -42,6 +46,8 @@ const PRODUCTS = [
     },
     {
         id: 3,
+        slug: "pe-lateral-boru-20mm",
+        brand: "Fırat Boru",
         name: "PE Lateral Boru 20mm (100m)",
         category: "damla",
         categoryName: "Damla Sulama",
@@ -61,6 +67,8 @@ const PRODUCTS = [
     },
     {
         id: 4,
+        slug: "damla-sulama-baglanti-seti",
+        brand: "Irritec",
         name: "Damla Sulama Bağlantı Seti (50 Parça)",
         category: "damla",
         categoryName: "Damla Sulama",
@@ -81,6 +89,8 @@ const PRODUCTS = [
     // Yağmurlama
     {
         id: 5,
+        slug: "360-doner-sprinkler-popup",
+        brand: "Rain Bird",
         name: "360° Döner Sprinkler - Pop-up",
         category: "yagmurlama",
         categoryName: "Yağmurlama",
@@ -100,6 +110,8 @@ const PRODUCTS = [
     },
     {
         id: 6,
+        slug: "sulama-tabancasi-metal",
+        brand: "Rain Bird",
         name: "Sulama Tabancası - Metal Gövde",
         category: "yagmurlama",
         categoryName: "Yağmurlama",
@@ -119,6 +131,8 @@ const PRODUCTS = [
     },
     {
         id: 7,
+        slug: "hortum-makarasi-1inch",
+        brand: "Hunter",
         name: "Hortum Makarası 1\" (100m kapasiteli)",
         category: "yagmurlama",
         categoryName: "Yağmurlama",
@@ -140,6 +154,8 @@ const PRODUCTS = [
     // Pompalar
     {
         id: 8,
+        slug: "4inch-dalgic-pompa-2hp",
+        brand: "Pedrollo",
         name: "4\" Dalgıç Pompa 2 HP",
         category: "pompa",
         categoryName: "Pompalar",
@@ -160,6 +176,8 @@ const PRODUCTS = [
     },
     {
         id: 9,
+        slug: "santrifuj-pompa-3hp",
+        brand: "Pedrollo",
         name: "Santrifüj Pompa 3 HP",
         category: "pompa",
         categoryName: "Pompalar",
@@ -180,6 +198,8 @@ const PRODUCTS = [
     },
     {
         id: 10,
+        slug: "gunes-enerjili-sulama-pompasi",
+        brand: "Pedrollo",
         name: "Güneş Enerjili Sulama Pompası 1.5 HP",
         category: "pompa",
         categoryName: "Pompalar",
@@ -202,6 +222,8 @@ const PRODUCTS = [
     // Filtre & Gübre
     {
         id: 11,
+        slug: "disk-filtre-2inch-120mesh",
+        brand: "Irritec",
         name: "Disk Filtre 2\" - 120 Mesh",
         category: "filtre",
         categoryName: "Filtre & Gübre",
@@ -221,6 +243,8 @@ const PRODUCTS = [
     },
     {
         id: 12,
+        slug: "kum-cakil-filtre-otomatik",
+        brand: "Irritec",
         name: "Kum-Çakıl Filtre 3\" - Otomatik Yıkamalı",
         category: "filtre",
         categoryName: "Filtre & Gübre",
@@ -240,6 +264,8 @@ const PRODUCTS = [
     },
     {
         id: 13,
+        slug: "venturi-gubre-enjektoru",
+        brand: "Irritec",
         name: "Venturi Gübre Enjektörü 1\"",
         category: "filtre",
         categoryName: "Filtre & Gübre",
@@ -260,6 +286,8 @@ const PRODUCTS = [
     // Borular & Bağlantılar
     {
         id: 14,
+        slug: "pe-boru-63mm-pn6",
+        brand: "Fırat Boru",
         name: "PE Boru 63mm PN6 (100m)",
         category: "boru",
         categoryName: "Borular & Bağlantılar",
@@ -279,6 +307,8 @@ const PRODUCTS = [
     },
     {
         id: 15,
+        slug: "pvc-vana-2inch-kuresel",
+        brand: "Pipelife",
         name: "PVC Vana 2\" Küresel",
         category: "boru",
         categoryName: "Borular & Bağlantılar",
@@ -298,6 +328,8 @@ const PRODUCTS = [
     },
     {
         id: 16,
+        slug: "pe-fitting-seti-63mm",
+        brand: "Fırat Boru",
         name: "PE Fitting Seti 63mm (10 Parça)",
         category: "boru",
         categoryName: "Borular & Bağlantılar",
@@ -318,6 +350,8 @@ const PRODUCTS = [
     // Akıllı Sulama
     {
         id: 17,
+        slug: "akilli-sulama-kontrol-unitesi",
+        brand: "Hunter",
         name: "Akıllı Sulama Kontrol Ünitesi - 8 İstasyon",
         category: "akilli",
         categoryName: "Akıllı Sulama",
@@ -338,6 +372,8 @@ const PRODUCTS = [
     },
     {
         id: 18,
+        slug: "toprak-nem-sensoru-kablosuz",
+        brand: "Netafim",
         name: "Toprak Nem Sensörü - Kablosuz",
         category: "akilli",
         categoryName: "Akıllı Sulama",
@@ -357,6 +393,8 @@ const PRODUCTS = [
     },
     {
         id: 19,
+        slug: "selenoid-vana-1inch-24v",
+        brand: "Hunter",
         name: "Selenoid Vana 1\" - 24V",
         category: "akilli",
         categoryName: "Akıllı Sulama",
@@ -376,6 +414,8 @@ const PRODUCTS = [
     },
     {
         id: 20,
+        slug: "dijital-su-sayaci-pulse",
+        brand: "Anadolu Boru",
         name: "Dijital Su Sayacı - Pulse Çıkışlı",
         category: "akilli",
         categoryName: "Akıllı Sulama",
@@ -393,6 +433,26 @@ const PRODUCTS = [
         },
         featured: false
     }
+];
+
+const BRANDS = [
+    { slug: "firat-boru", name: "Fırat Boru", description: "Türkiye'nin lider boru üreticisi. 1960'tan bu yana PE boru, PVC boru ve sulama boruları üretmektedir." },
+    { slug: "netafim", name: "Netafim", description: "İsrail menşeli dünyanın en büyük damla sulama sistemleri üreticisi. 1965'ten beri küresel sulama çözümleri sunmaktadır." },
+    { slug: "rainbird", name: "Rain Bird", description: "1933'ten bu yana sulama sektörünün öncüsü. Yağmurlama ve sprinkler sistemlerinde dünya lideri." },
+    { slug: "irritec", name: "Irritec", description: "İtalyan menşeli mikro sulama ve filtrasyon çözümleri üreticisi. Damla sulama ve filtre sistemlerinde uzman." },
+    { slug: "pipelife", name: "Pipelife", description: "Avrupa'nın lider plastik boru üreticisi. PE ve PVC boru sistemlerinde 50 yılı aşkın deneyim." },
+    { slug: "anadolu-boru", name: "Anadolu Boru", description: "Türkiye'nin köklü boru üreticilerinden. Tarımsal sulama boruları ve altyapı çözümlerinde güvenilir marka." },
+    { slug: "hunter", name: "Hunter", description: "ABD menşeli sulama otomasyon ve kontrol sistemleri üreticisi. Akıllı sulama çözümlerinde dünya lideri." },
+    { slug: "pedrollo", name: "Pedrollo", description: "İtalyan menşeli pompa üreticisi. Dalgıç pompa, santrifüj pompa ve güneş enerjili pompalarda 50 yılı aşkın tecrübe." }
+];
+
+const CATEGORIES = [
+    { slug: "damla-sulama", name: "Damla Sulama", category: "damla", description: "Damla sulama boruları, damlatıcılar, lateral borular ve bağlantı parçaları. Su tasarrufu sağlayan modern sulama çözümleri." },
+    { slug: "yagmurlama-sistemleri", name: "Yağmurlama Sistemleri", category: "yagmurlama", description: "Sprinkler, sulama tabancası, hortum makaraları ve yağmurlama ekipmanları. Geniş alan sulama çözümleri." },
+    { slug: "pompalar", name: "Pompalar", category: "pompa", description: "Dalgıç pompa, santrifüj pompa ve güneş enerjili pompalar. Her türlü su kaynağı için uygun çözümler." },
+    { slug: "filtre-gubre-sistemleri", name: "Filtre & Gübre Sistemleri", category: "filtre", description: "Disk filtre, kum filtre, venturi enjektör ve fertigasyon üniteleri. Sulama suyunun filtrelenmesi ve gübre enjeksiyonu." },
+    { slug: "borular-baglantilar", name: "Borular & Bağlantılar", category: "boru", description: "PE borular, PVC borular, vanalar ve fitting parçaları. Sulama altyapısı için gerekli tüm boru ve bağlantı malzemeleri." },
+    { slug: "akilli-sulama", name: "Akıllı Sulama", category: "akilli", description: "Sulama otomasyon kontrol üniteleri, toprak nem sensörleri, selenoid vanalar ve dijital su sayaçları." }
 ];
 
 // Helper to get base path
@@ -427,4 +487,21 @@ function getRelatedProducts(productId, limit) {
     return PRODUCTS
         .filter(p => p.category === product.category && p.id !== product.id)
         .slice(0, limit || 4);
+}
+
+// Get products by brand
+function getProductsByBrand(brandSlug) {
+    const brand = BRANDS.find(b => b.slug === brandSlug);
+    if (!brand) return [];
+    return PRODUCTS.filter(p => p.brand === brand.name);
+}
+
+// Get brand by slug
+function getBrandBySlug(slug) {
+    return BRANDS.find(b => b.slug === slug);
+}
+
+// Get category by slug
+function getCategoryBySlug(slug) {
+    return CATEGORIES.find(c => c.slug === slug);
 }

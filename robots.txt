@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /pages/sepet.html
+Disallow: /pages/urun-detay.html
+
+Sitemap: https://www.sulamashop.com/sitemap.xml
