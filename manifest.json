@@ -1,0 +1,20 @@
+{
+    "name": "SulamaShop - Tarımsal Sulama Sistemleri",
+    "short_name": "SulamaShop",
+    "description": "Türkiye'nin en geniş tarımsal sulama malzemeleri mağazası",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#2e7d32",
+    "orientation": "portrait-primary",
+    "lang": "tr",
+    "icons": [
+        {
+            "src": "/favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["shopping", "business"]
+}
