@@ -82,13 +82,17 @@
 <body>
     <header class="header">
         <div class="container header-inner">
-            <a href="../index.html" class="logo">SulamaShop</a>
+            <a href="../index.html" class="logo"><span class="logo-icon">💧</span><span class="logo-text">Sulama<strong>Shop</strong></span></a>
             <nav class="nav">
                 <a href="../index.html" class="nav-link">Ana Sayfa</a>
                 <a href="../pages/urunler.html" class="nav-link">Ürünler</a>
                 <a href="../pages/hakkimizda.html" class="nav-link">Hakkımızda</a>
                 <a href="../pages/iletisim.html" class="nav-link">İletişim</a>
             </nav>
+                    <div class="header-actions">
+                        <button class="cart-btn" onclick="document.querySelector('.cart-sidebar').classList.toggle('open');document.querySelector('.cart-overlay').classList.toggle('open');">🛒 <span class="cart-count">0</span></button>
+                        <button class="mobile-menu-btn" onclick="document.querySelector('.nav').classList.toggle('open');this.textContent=this.textContent==='✕'?'☰':'✕';">☰</button>
+                    </div>
         </div>
     </header>
 
@@ -182,7 +186,7 @@
         <div class="container footer-grid">
             <div class="footer-col">
                 <h3>Şirket</h3>
-                <ul>
+                <ul style="list-style:none;padding:0;">
                     <li><a href="../pages/hakkimizda.html">Hakkımızda</a></li>
                     <li><a href="../pages/iletisim.html">İletişim</a></li>
                     <li><a href="../pages/urunler.html">Tüm Ürünler</a></li>
@@ -190,7 +194,7 @@
             </div>
             <div class="footer-col">
                 <h3>Kategoriler</h3>
-                <ul>
+                <ul style="list-style:none;padding:0;">
                     <li><a href="../kategori/damla-sulama.html">Damla Sulama</a></li>
                     <li><a href="../kategori/yagmurlama-sistemleri.html">Yağmurlama Sistemleri</a></li>
                     <li><a href="../kategori/filtre-gubre-sistemleri.html">Filtre &amp; Gübre</a></li>
@@ -200,7 +204,7 @@
             </div>
             <div class="footer-col">
                 <h3>Markalar</h3>
-                <ul>
+                <ul style="list-style:none;padding:0;">
                     <li><a href="../marka/irritec.html">Irritec</a></li>
                     <li><a href="../marka/netafim.html">Netafim</a></li>
                     <li><a href="../marka/hunter.html">Hunter</a></li>

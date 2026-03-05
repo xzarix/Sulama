@@ -1,3 +1,29 @@
+// SVG Icons for product categories
+const PRODUCT_ICONS = {
+    damla: '<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient id="g-damla" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0e7c46"/><stop offset="100%" stop-color="#1a9d5a"/></linearGradient></defs><path d="M32 8C32 8 16 28 16 40a16 16 0 0 0 32 0C48 28 32 8 32 8z" fill="url(#g-damla)" opacity="0.15"/><path d="M32 8C32 8 16 28 16 40a16 16 0 0 0 32 0C48 28 32 8 32 8z" stroke="url(#g-damla)" stroke-width="2.5" fill="none"/><circle cx="26" cy="42" r="3" fill="url(#g-damla)" opacity="0.4"/><path d="M20 34h24M22 28h20" stroke="url(#g-damla)" stroke-width="1.5" stroke-dasharray="3 3" opacity="0.5"/></svg>',
+    yagmurlama: '<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient id="g-yag" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#1a73e8"/><stop offset="100%" stop-color="#4a90e8"/></linearGradient></defs><rect x="28" y="32" width="8" height="24" rx="2" fill="url(#g-yag)" opacity="0.2"/><rect x="28" y="32" width="8" height="24" rx="2" stroke="url(#g-yag)" stroke-width="2" fill="none"/><path d="M32 32C32 32 20 20 14 14M32 32C32 32 32 16 32 10M32 32C32 32 44 20 50 14" stroke="url(#g-yag)" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="14" r="2" fill="url(#g-yag)" opacity="0.6"/><circle cx="32" cy="10" r="2" fill="url(#g-yag)" opacity="0.6"/><circle cx="50" cy="14" r="2" fill="url(#g-yag)" opacity="0.6"/><path d="M10 20l2 4M24 8l1 4M40 8l-1 4M54 20l-2 4" stroke="url(#g-yag)" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/></svg>',
+    pompa: '<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient id="g-pompa" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#e65100"/><stop offset="100%" stop-color="#ff8f00"/></linearGradient></defs><circle cx="32" cy="32" r="18" fill="url(#g-pompa)" opacity="0.12"/><circle cx="32" cy="32" r="18" stroke="url(#g-pompa)" stroke-width="2.5" fill="none"/><circle cx="32" cy="32" r="6" fill="url(#g-pompa)" opacity="0.3"/><circle cx="32" cy="32" r="6" stroke="url(#g-pompa)" stroke-width="2" fill="none"/><path d="M32 14v6M32 44v6M14 32h6M44 32h6" stroke="url(#g-pompa)" stroke-width="2.5" stroke-linecap="round"/><path d="M6 32h8M50 32h8" stroke="url(#g-pompa)" stroke-width="2" stroke-linecap="round"/><rect x="4" y="28" width="4" height="8" rx="1" fill="url(#g-pompa)" opacity="0.3"/><rect x="56" y="28" width="4" height="8" rx="1" fill="url(#g-pompa)" opacity="0.3"/></svg>',
+    filtre: '<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient id="g-filtre" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#7b1fa2"/><stop offset="100%" stop-color="#ab47bc"/></linearGradient></defs><path d="M12 12h40l-14 20v16l-12 6V32L12 12z" fill="url(#g-filtre)" opacity="0.12"/><path d="M12 12h40l-14 20v16l-12 6V32L12 12z" stroke="url(#g-filtre)" stroke-width="2.5" fill="none" stroke-linejoin="round"/><path d="M18 18h28M22 24h20" stroke="url(#g-filtre)" stroke-width="1.5" opacity="0.5"/><circle cx="30" cy="38" r="1.5" fill="url(#g-filtre)" opacity="0.6"/><circle cx="34" cy="42" r="1.5" fill="url(#g-filtre)" opacity="0.6"/></svg>',
+    boru: '<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient id="g-boru" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#0277bd"/><stop offset="100%" stop-color="#0288d1"/></linearGradient></defs><path d="M8 20h20v8H8zM28 20v28h8V20zM36 40h20v8H36z" fill="url(#g-boru)" opacity="0.12"/><path d="M8 20h20v8H8zM28 20v28h8V20zM36 40h20v8H36z" stroke="url(#g-boru)" stroke-width="2.5" fill="none" stroke-linejoin="round"/><circle cx="8" cy="24" r="3" stroke="url(#g-boru)" stroke-width="2" fill="none"/><circle cx="56" cy="44" r="3" stroke="url(#g-boru)" stroke-width="2" fill="none"/><path d="M14 24h6M42 44h8" stroke="url(#g-boru)" stroke-width="1.5" stroke-dasharray="2 2" opacity="0.5"/></svg>',
+    akilli: '<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" width="64" height="64"><defs><linearGradient id="g-akilli" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#00897b"/><stop offset="100%" stop-color="#26a69a"/></linearGradient></defs><rect x="16" y="8" width="32" height="48" rx="4" fill="url(#g-akilli)" opacity="0.12"/><rect x="16" y="8" width="32" height="48" rx="4" stroke="url(#g-akilli)" stroke-width="2.5" fill="none"/><rect x="20" y="14" width="24" height="28" rx="2" stroke="url(#g-akilli)" stroke-width="1.5" fill="url(#g-akilli)" opacity="0.08"/><circle cx="32" cy="50" r="2" fill="url(#g-akilli)"/><path d="M26 24l4 4-4 4M34 28h6" stroke="url(#g-akilli)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="28" cy="36" r="1" fill="url(#g-akilli)" opacity="0.5"/><circle cx="32" cy="36" r="1" fill="url(#g-akilli)" opacity="0.5"/><circle cx="36" cy="36" r="1" fill="url(#g-akilli)" opacity="0.5"/></svg>'
+};
+
+// Category icon mapping for products
+const CATEGORY_ICON_MAP = {
+    'damla': 'damla',
+    'yagmurlama': 'yagmurlama',
+    'pompa': 'pompa',
+    'filtre': 'filtre',
+    'boru': 'boru',
+    'akilli': 'akilli'
+};
+
+// Get SVG icon for a product
+function getProductSVGIcon(product) {
+    const iconKey = CATEGORY_ICON_MAP[product.category] || 'damla';
+    return PRODUCT_ICONS[iconKey] || product.icon;
+}
+
 // Product data for SulamaShop
 const PRODUCTS = [
     // Damla Sulama

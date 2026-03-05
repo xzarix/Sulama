@@ -9,7 +9,47 @@ document.addEventListener('DOMContentLoaded', function () {
     initCartPage();
     initContactForm();
     initNewsletterForm();
+    initHeaderScroll();
+    initScrollAnimations();
 });
+
+// Header scroll effect
+function initHeaderScroll() {
+    const header = document.querySelector('.header');
+    if (!header) return;
+    let ticking = false;
+    window.addEventListener('scroll', function () {
+        if (!ticking) {
+            window.requestAnimationFrame(function () {
+                if (window.scrollY > 20) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+}
+
+// Scroll-triggered animations
+function initScrollAnimations() {
+    if (!('IntersectionObserver' in window)) return;
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                entry.target.style.animation = 'fadeInUp 0.6s ease both';
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.category-card, .feature-card, .value-card, .stat-card, .contact-card').forEach(function (el) {
+        el.style.opacity = '0';
+        observer.observe(el);
+    });
+}
 
 // Toast notification
 function showToast(message) {
@@ -64,13 +104,14 @@ function initCartSidebar() {
 function renderProductCard(product) {
     const basePath = getBasePath();
     const detailPage = basePath === './' ? 'pages/urun-detay.html' : 'urun-detay.html';
+    const svgIcon = typeof getProductSVGIcon === 'function' ? getProductSVGIcon(product) : product.icon;
 
     return `
         <div class="product-card">
             <a href="${detailPage}?id=${product.id}">
                 <div class="product-image">
                     ${product.badge ? `<span class="product-badge">${product.badge}</span>` : ''}
-                    ${product.icon}
+                    ${svgIcon}
                 </div>
             </a>
             <div class="product-info">
@@ -203,8 +244,9 @@ function initProductDetail() {
         specsHtml += '</table></div>';
     }
 
+    const detailSvgIcon = typeof getProductSVGIcon === 'function' ? getProductSVGIcon(product) : product.icon;
     container.innerHTML = `
-        <div class="detail-image">${product.icon}</div>
+        <div class="detail-image">${detailSvgIcon}</div>
         <div class="detail-info">
             <span class="detail-category">${product.categoryName}</span>
             <h1>${product.name}</h1>
