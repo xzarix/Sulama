@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - SulamaShop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">💧</span>
+                    <span class="logo-text">Sulama<strong>Shop</strong></span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="../index.html" class="nav-link">Ana Sayfa</a>
+                    <a href="urunler.html" class="nav-link">Ürünler</a>
+                    <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                    <a href="iletisim.html" class="nav-link active">İletişim</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Ana Sayfa</a> / <span>İletişim</span>
+        </div>
+    </div>
+
+    <section class="contact-page">
+        <div class="container">
+            <h1>İletişim</h1>
+            <p class="section-subtitle">Sorularınız için bize ulaşın</p>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Adres</h3>
+                        <p>Organize Sanayi Bölgesi<br>1. Cadde No: 42<br>Selçuklu / Konya</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Telefon</h3>
+                        <p>0 (332) 555 00 00<br>0 (555) 123 45 67</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">✉️</div>
+                        <h3>E-posta</h3>
+                        <p>info@sulamashop.com<br>satis@sulamashop.com</p>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🕐</div>
+                        <h3>Çalışma Saatleri</h3>
+                        <p>Pazartesi - Cumartesi<br>08:00 - 18:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2>Bize Yazın</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Ad Soyad</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Telefon</label>
+                                <input type="tel" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>E-posta</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Konu</label>
+                            <select required>
+                                <option value="">Seçiniz</option>
+                                <option value="bilgi">Ürün Bilgisi</option>
+                                <option value="teklif">Fiyat Teklifi</option>
+                                <option value="siparis">Sipariş Takibi</option>
+                                <option value="teknik">Teknik Destek</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Mesajınız</label>
+                            <textarea rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 SulamaShop. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

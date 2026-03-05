@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim - SulamaShop</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="../index.html" class="logo">
+                    <span class="logo-icon">💧</span>
+                    <span class="logo-text">Sulama<strong>Shop</strong></span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="../index.html" class="nav-link">Ana Sayfa</a>
+                    <a href="urunler.html" class="nav-link">Ürünler</a>
+                    <a href="hakkimizda.html" class="nav-link">Hakkımızda</a>
+                    <a href="iletisim.html" class="nav-link">İletişim</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="../index.html">Ana Sayfa</a> / <span>Sepetim</span>
+        </div>
+    </div>
+
+    <section class="cart-page">
+        <div class="container">
+            <h1>Sepetim</h1>
+            <div class="cart-page-layout" id="cartPageContent">
+                <div class="cart-page-items" id="cartPageItems">
+                    <p class="cart-empty-page">Sepetinizde ürün bulunmamaktadır.</p>
+                </div>
+                <div class="cart-page-summary" id="cartPageSummary" style="display:none;">
+                    <h3>Sipariş Özeti</h3>
+                    <div class="summary-row">
+                        <span>Ara Toplam</span>
+                        <span id="subtotal">0 TL</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Kargo</span>
+                        <span id="shipping">0 TL</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Toplam</span>
+                        <strong id="totalAmount">0 TL</strong>
+                    </div>
+                    <button class="btn btn-primary btn-block" id="checkoutBtn">Siparişi Tamamla</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkoutModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2>Sipariş Bilgileri</h2>
+            <form id="checkoutForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefon</label>
+                        <input type="tel" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>E-posta</label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Adres</label>
+                    <textarea rows="3" required></textarea>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>İl</label>
+                        <input type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label>İlçe</label>
+                        <input type="text" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Siparişi Onayla</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>&copy; 2026 SulamaShop. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SulamaShop - Tarımsal Sulama Sistemleri</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">💧</span>
+                    <span class="logo-text">Sulama<strong>Shop</strong></span>
+                </a>
+                <nav class="nav" id="mainNav">
+                    <a href="index.html" class="nav-link active">Ana Sayfa</a>
+                    <a href="pages/urunler.html" class="nav-link">Ürünler</a>
+                    <a href="pages/hakkimizda.html" class="nav-link">Hakkımızda</a>
+                    <a href="pages/iletisim.html" class="nav-link">İletişim</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="cart-btn" id="cartBtn">
+                        <span class="cart-icon">🛒</span>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Tarımsal Sulama<br><span class="highlight">Çözümleri</span></h1>
+                <p>Damla sulama, yağmurlama ve akıllı sulama sistemleri ile veriminizi artırın. Türkiye'nin en geniş sulama ürünleri yelpazesi.</p>
+                <div class="hero-buttons">
+                    <a href="pages/urunler.html" class="btn btn-primary">Ürünleri İncele</a>
+                    <a href="pages/iletisim.html" class="btn btn-outline">Teklif Al</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <strong>500+</strong>
+                        <span>Ürün Çeşidi</span>
+                    </div>
+                    <div class="stat">
+                        <strong>10.000+</strong>
+                        <span>Mutlu Müşteri</span>
+                    </div>
+                    <div class="stat">
+                        <strong>81 İl</strong>
+                        <span>Teslimat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories" id="categories">
+        <div class="container">
+            <h2 class="section-title">Ürün Kategorileri</h2>
+            <p class="section-subtitle">İhtiyacınıza uygun sulama çözümlerini keşfedin</p>
+            <div class="category-grid">
+                <a href="pages/urunler.html?kategori=damla" class="category-card">
+                    <div class="category-icon">🌱</div>
+                    <h3>Damla Sulama</h3>
+                    <p>Damla sulama boruları, lateraller, dripper ve bağlantı parçaları</p>
+                </a>
+                <a href="pages/urunler.html?kategori=yagmurlama" class="category-card">
+                    <div class="category-icon">🌧️</div>
+                    <h3>Yağmurlama Sistemleri</h3>
+                    <p>Sprinkler, tabanca, hortum makaraları ve yağmurlama ekipmanları</p>
+                </a>
+                <a href="pages/urunler.html?kategori=pompa" class="category-card">
+                    <div class="category-icon">⚙️</div>
+                    <h3>Pompalar</h3>
+                    <p>Dalgıç, santrifüj, güneş enerjili ve dizel pompalar</p>
+                </a>
+                <a href="pages/urunler.html?kategori=filtre" class="category-card">
+                    <div class="category-icon">🔧</div>
+                    <h3>Filtre & Gübre Sistemleri</h3>
+                    <p>Disk, kum, hidrosiklon filtreler ve fertigasyon üniteleri</p>
+                </a>
+                <a href="pages/urunler.html?kategori=boru" class="category-card">
+                    <div class="category-icon">🔩</div>
+                    <h3>Borular & Bağlantılar</h3>
+                    <p>PE borular, PVC borular, fitting ve vana çeşitleri</p>
+                </a>
+                <a href="pages/urunler.html?kategori=akilli" class="category-card">
+                    <div class="category-icon">📱</div>
+                    <h3>Akıllı Sulama</h3>
+                    <p>Otomasyon, sensörler, kontrol üniteleri ve uzaktan yönetim</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Öne Çıkan Ürünler</h2>
+            <p class="section-subtitle">En çok tercih edilen sulama ürünleri</p>
+            <div class="product-grid" id="featuredProducts">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="pages/urunler.html" class="btn btn-primary">Tüm Ürünleri Gör</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>Ücretsiz Kargo</h3>
+                    <p>500 TL üzeri siparişlerde ücretsiz kargo</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Güvenli Ödeme</h3>
+                    <p>256-bit SSL ile güvenli alışveriş</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📞</div>
+                    <h3>7/24 Destek</h3>
+                    <p>Teknik destek ve danışmanlık hizmeti</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">↩️</div>
+                    <h3>Kolay İade</h3>
+                    <p>14 gün içinde koşulsuz iade garantisi</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Kampanyalardan Haberdar Olun</h2>
+                <p>E-posta adresinizi bırakın, fırsatları kaçırmayın!</p>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="E-posta adresiniz" required>
+                    <button type="submit" class="btn btn-primary">Abone Ol</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="logo footer-logo">
+                        <span class="logo-icon">💧</span>
+                        <span class="logo-text">Sulama<strong>Shop</strong></span>
+                    </div>
+                    <p>Türkiye'nin lider tarımsal sulama ekipmanları tedarikçisi. Kaliteli ürünler, uygun fiyatlar.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Hızlı Linkler</h4>
+                    <a href="pages/urunler.html">Ürünler</a>
+                    <a href="pages/hakkimizda.html">Hakkımızda</a>
+                    <a href="pages/iletisim.html">İletişim</a>
+                    <a href="pages/sepet.html">Sepetim</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Kategoriler</h4>
+                    <a href="pages/urunler.html?kategori=damla">Damla Sulama</a>
+                    <a href="pages/urunler.html?kategori=yagmurlama">Yağmurlama</a>
+                    <a href="pages/urunler.html?kategori=pompa">Pompalar</a>
+                    <a href="pages/urunler.html?kategori=akilli">Akıllı Sulama</a>
+                </div>
+                <div class="footer-col">
+                    <h4>İletişim</h4>
+                    <p>📍 Organize Sanayi Bölgesi, Konya</p>
+                    <p>📞 0 (332) 555 00 00</p>
+                    <p>✉️ info@sulamashop.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 SulamaShop. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Sepetim</h3>
+            <button class="cart-close" id="cartClose">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Sepetiniz boş</p>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span>Toplam:</span>
+                <strong id="cartTotal">0 TL</strong>
+            </div>
+            <a href="pages/sepet.html" class="btn btn-primary btn-block">Sepete Git</a>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
