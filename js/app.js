@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initNewsletterForm();
     initHeaderScroll();
     initScrollAnimations();
+    initButtonRipples();
 });
 
 // Header scroll effect
@@ -39,15 +40,42 @@ function initScrollAnimations() {
     const observer = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
             if (entry.isIntersecting) {
-                entry.target.style.animation = 'fadeInUp 0.6s ease both';
+                var delay = entry.target.dataset.delay || '0';
+                entry.target.style.animation = 'fadeInUp 0.6s ease ' + delay + 'ms both';
                 observer.unobserve(entry.target);
             }
         });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
 
-    document.querySelectorAll('.category-card, .feature-card, .value-card, .stat-card, .contact-card').forEach(function (el) {
+    var selectors = '.category-card, .feature-card, .value-card, .stat-card, .contact-card, .product-card, .faq-item, .brand-card, .reveal';
+    var groups = {};
+    document.querySelectorAll(selectors).forEach(function (el) {
         el.style.opacity = '0';
+        // Add stagger delay based on position in parent
+        var parent = el.parentElement;
+        if (parent) {
+            if (!groups[parent]) groups[parent] = 0;
+            el.dataset.delay = groups[parent] * 80;
+            groups[parent]++;
+        }
         observer.observe(el);
+    });
+}
+
+// Button ripple effect
+function initButtonRipples() {
+    document.addEventListener('click', function (e) {
+        var btn = e.target.closest('.btn');
+        if (!btn) return;
+        var rect = btn.getBoundingClientRect();
+        var ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        var size = Math.max(rect.width, rect.height);
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+        ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+        btn.appendChild(ripple);
+        setTimeout(function () { ripple.remove(); }, 600);
     });
 }
 
@@ -70,9 +98,12 @@ function initMobileMenu() {
     const nav = document.getElementById('mainNav');
     if (!btn || !nav) return;
 
+    var menuSvg = '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>';
+    var closeSvg = '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+    btn.innerHTML = menuSvg;
     btn.addEventListener('click', function () {
         nav.classList.toggle('open');
-        btn.textContent = nav.classList.contains('open') ? '✕' : '☰';
+        btn.innerHTML = nav.classList.contains('open') ? closeSvg : menuSvg;
     });
 }
 

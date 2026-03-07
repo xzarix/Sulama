@@ -95,7 +95,7 @@ const Cart = {
             if (!product) return;
             html += `
                 <div class="cart-item">
-                    <div class="cart-item-image">${product.icon}</div>
+                    <div class="cart-item-image">${typeof getProductSVGIcon === 'function' ? getProductSVGIcon(product) : product.icon}</div>
                     <div class="cart-item-details">
                         <div class="cart-item-name">${product.name}</div>
                         <div class="cart-item-price">${product.price.toLocaleString('tr-TR')} TL</div>
@@ -136,7 +136,7 @@ const Cart = {
             if (!product) return;
             html += `
                 <div class="cart-page-item">
-                    <div class="cart-page-item-image">${product.icon}</div>
+                    <div class="cart-page-item-image">${typeof getProductSVGIcon === 'function' ? getProductSVGIcon(product) : product.icon}</div>
                     <div class="cart-page-item-info">
                         <h3>${product.name}</h3>
                         <p class="price">${product.price.toLocaleString('tr-TR')} TL</p>
